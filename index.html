@@ -1,277 +1,99 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>화곡동 이면 골목 어귀에서 마주한 멜로디와 사색의 밤</title>
-  <link lang="ko" rel="canonical" href="https://hwagok-song-zone.namanavi.com/">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #FAF8F5;
-      color: #37352F;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
-      line-height: 1.8;
-      word-break: keep-all;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-ledger-cool">
+    <title>화곡 가라오케 예약 — 지역적 특성에 따른 모임 성격별 선택 가이드</title>
+    <meta name="description" content="화곡 가라오케 예약을 준비하시나요? 인접 지역인 강서구 내 타 상권과의 차이점, 참석자 성격에 따른 공간 선택 기준, 그리고 이동 동선 최적화 전략을 상세히 안내합니다.">
+    <meta name="keywords" content="화곡 가라오케 예약, 강서구 가라오케, 모임 장소 선정, 지역별 가라오케 비교">
+    <link rel="canonical" href="https://hwagok-song-zone.namanavi.com/">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "화곡 가라오케 예약 정보 가이드",
+      "author": { "@type": "Person", "name": "김진우" },
+      "description": "화곡 지역 가라오케 모임 준비를 위한 전략적 가이드 제공",
+      "areaServed": "화곡"
     }
-    .wrapper {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: 80px 24px;
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "화곡 지역에서 가라오케를 예약할 때 가장 먼저 고려할 점은 무엇인가요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "참석자들의 주 이동 경로와 귀가 편의성을 우선적으로 살펴야 합니다. 화곡은 강서구의 중심지로 외부 유입이 많으므로 접근성을 최우선 순위에 두는 것이 좋습니다." }
+        },
+        {
+          "@type": "Question",
+          "name": "인근 지역과 비교했을 때 화곡만의 공간적 특징은 무엇인가요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "화곡은 밀집도가 높고 효율적인 동선 구성이 가능한 상권입니다. 대규모 인원보다는 집중도 있는 소규모 모임에 최적화된 공간이 많다는 것이 특징입니다." }
+        }
+      ]
     }
-    .header {
-      border-bottom: 1px solid #E3E2E0;
-      padding-bottom: 24px;
-      margin-bottom: 48px;
-    }
-    .blog-name {
-      font-size: 14px;
-      letter-spacing: 0.1em;
-      color: #878682;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-    .essay-title {
-      font-size: 28px;
-      font-weight: 700;
-      color: #1A1A1A;
-      line-height: 1.4;
-      margin: 0;
-    }
-    .meta-date {
-      font-size: 13px;
-      color: #9B9A97;
-      margin-top: 12px;
-    }
-    .content-body {
-      font-size: 16px;
-      color: #37352F;
-    }
-    .content-body p {
-      margin-bottom: 28px;
-    }
-    .sub-section-title {
-      display: block;
-      font-size: 18px;
-      font-weight: 600;
-      color: #1A1A1A;
-      margin-top: 48px;
-      margin-bottom: 16px;
-      border-left: 3px solid #DFDEDA;
-      padding-left: 12px;
-    }
-    .footer {
-      margin-top: 80px;
-      border-top: 1px solid #E3E2E0;
-      padding-top: 24px;
-      font-size: 12px;
-      color: #9B9A97;
-      text-align: center;
-    }
-    .archive-id {
-      font-family: monospace;
-      color: #C1C0BC;
-      margin-top: 8px;
-    }
-    /* UGC Comments */
-    .comments-section {
-      margin-top: 60px;
-      padding-top: 40px;
-      border-top: 1px dashed #E3E2E0;
-    }
-    .comments-header {
-      font-size: 15px;
-      font-weight: 600;
-      color: #878682;
-      margin-bottom: 24px;
-    }
-    .comment-card {
-      background-color: #ffffff;
-      border: 1px solid #EDECE9;
-      border-radius: 8px;
-      padding: 16px 20px;
-      margin-bottom: 16px;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
-    }
-    .comment-meta {
-      display: flex;
-      justify-content: space-between;
-      font-size: 12px;
-      color: #9B9A97;
-      margin-bottom: 8px;
-    }
-    .comment-author {
-      font-weight: 600;
-      color: #5A5A57;
-    }
-    .comment-text {
-      font-size: 14px;
-      color: #4B4B47;
-      line-height: 1.6;
-    }
-  </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    </script>
+    <style>
+        :root { --primary: #111827; --accent: #2563eb; --bg: #f9fafb; }
+        body { font-family: 'IBM Plex Mono', monospace; background: var(--bg); color: var(--primary); line-height: 1.6; margin: 0; padding: 0; }
+        .v-img-rc4e { max-width: 960px; margin: 0 auto; padding: 48px 24px; border-left: 3px solid #000; border-right: 3px solid #000; min-height: 100vh; }
+        header { border-bottom: 3px solid #000; padding-bottom: 24px; margin-bottom: 48px; }
+        h1 { font-family: 'Noto Serif KR', serif; font-size: 2.5rem; border-bottom: 3px solid #000; }
+        section { padding: 48px 0; border-bottom: 1px solid #ddd; }
+        .k-body-4om4 { list-style: none; padding: 0; }
+        .k-head-pr3y { display: flex; justify-content: space-between; margin-bottom: 16px; border-bottom: 1px dashed #ccc; padding-bottom: 8px; }
+        .r-item-g45o { background: var(--primary); color: #fff; padding: 12px 24px; border: none; cursor: pointer; border-radius: 4px; }
+        footer { padding: 48px 0; font-size: 0.8rem; border-top: 3px solid #000; }
+        @media (max-width: 768px) { .v-img-rc4e { border: none; } }
+    </style>
+  <meta property="og:url" content="https://hwagok-song-zone.namanavi.com/">
 </head>
 <body>
-  <div class="wrapper">
-    <div class="header">
-      <div class="blog-name">서랍 속 조각글</div>
-      <div class="essay-title">화곡동 이면 골목 어귀에서 마주한 멜로디와 사색의 밤</div>
-      <div class="meta-date">작성일: 2026. 05. 26</div>
-    </div>
-    
-    <div class="content-body">
-      <p>화곡동의 고즈넉한 이면 골목은 저녁이 되면 직장에서 바쁘게 하루를 매듭지은 직장인들의 피로 섞인 그림자와 은은하게 도는 가로등 불빛으로 차분하게 데워진다. 모니터 앞의 복잡한 보고서 뭉치와 실랑이를 벌이느라 팽팽했던 마음의 끈은 선선한 골목 바람을 들이켜자 한결 둥글게 풀리기 마련이다. 오랜 친구들과 마주 앉아 가볍게 저녁을 해치운 뒤, 우리는 학창 시절 자주 불렀던 소박하고 정겨운 멜로디에 기대어 기분을 환기할 수 있는 프라이빗한 아지트를 자연스럽게 찾았다.</p>
 
-      <p>우리가 원했던 것은 화려하고 요란한 유흥 시설이 아니라, 오롯이 우리들의 서툰 목소리조차 따뜻하고 편안하게 감싸 안아줄 수 있는 조용한 아지트 같은 공간이었다. 굳이 잘 쓰인 전문 후기글들이 가득 찬 포털 상업 광고 포스트나 화곡 가라오케 예약 같은 복잡한 타이틀들을 밤새 눈 아프게 비교하려 들지 않더라도, 주변 지리가 편리한 건물 지하 모퉁이에 조용하게 자리 잡고 있는 아늑한 매장 하나만 정직하게 골라 예약해도 훌륭한 쉼터를 찾아낼 수 있다. 화려하고 번잡한 간판들 틈바구니에서 모던하게 마감된 세련된 문을 열고 들어가면, 정갈하게 흐르는 음악 소리와 깨끗하게 정돈된 실내 공기가 비로소 우리의 마음에 편안한 긴장 완화를 선사한다. 마이크 청결 소독도 아주 잘 되어 있어 안심하고 맘껏 즐기기에 흠잡을 곳이 없다.</p>
-      
-      <span class="sub-section-title">스쳐 흘러가는 멜로디 속에 아로새긴 인생의 쉼표</span>
-      <p>친구들의 낯선 노래 부르는 모습 속에서 인간적이고 호탕한 면모들을 발견하며 서로 어깨동무를 하고 큰 웃음으로 마무리하는 그 찰나의 경험은 참 소중하다. 거창한 사회적 가면을 잠시 룸 입구에 내려두고 목청을 높여 소리를 지르고 나면, 가슴 깊숙한 곳에 굳어 있던 묵은 스트레스와 피로가 말끔히 씻겨 내려가는 듯한 개운함을 실감한다. 진정한 휴식이란 요란한 겉포장에 기댈 필요 없이, 내 뚝심을 굳건히 지키며 마음이 통하는 이들과 조화로운 온기 속에서 멜로디 한 자락을 온전히 주고받는 행복에 집중할 때 비로소 완성되는 것이다.</p>
-      
-      <p>가벼운 발걸음으로 나선 화곡 밤길 위로 엷은 안개가 피어오르고 있었지만, 가슴속 깊이 든든하게 채워진 온기 덕분인지 전혀 차갑지 않게 느껴졌다. 나만의 소박하고 정갈한 쉼표를 가슴속 서랍에 귀중하게 간직하고 다가올 내일 아침을 기분 좋게 준비해 본다.</p>
-    </div>
+<div class="v-img-rc4e">
+    <header>
+        <p>$ site --about :: 화곡 가라오케 예약 정보 가이드</p>
+        <h1>화곡 가라오케 예약 — 지역적 특성에 따른 모임 성격별 선택 가이드</h1>
+    </header>
 
-    <div class="comments-section">
-      <div class="comments-header">최근 다녀간 이들의 다정한 흔적</div>
-      
-      <div class="comment-card">
-        <div class="comment-meta">
-          <span class="comment-author">화곡동지기</span>
-          <span>★ ★ ★ ★ ★ (2026.05.26)</span>
-        </div>
-        <div class="comment-text">
-          시설이 너무 쾌적하고 위생 관리가 정말 잘 되어 있더군요. 마이크에 냄새도 전혀 안 나고 아주 안심하고 신나게 노래하다 갑니다.
-        </div>
-      </div>
+    <main>
+<h2>화곡 가라오케 예약 가이드 개요</h2>
+<p>화곡 지역은 주거 밀집지와 상업 지구가 공존하여 다양한 연령층이 모이는 특성을 지니고 있습니다.</p>
+<p>따라서 가라오케를 이용할 때 모임의 목적에 따라 공간 규모와 분위기를 다르게 선택하는 것이 효율적입니다.</p>
+<h2>가족 모임에 적합한 조용한 룸 선택</h2>
+<p>가족 단위 모임은 소음 차단이 잘 되는 중소형 룸을 선호하며, 어린이 동반 시 안전 시설이 갖춰진 장소를 우선 고려합니다.</p>
+<p>예약 시 인원 수와 이용 시간을 미리 전달하면 원활한 배정이 가능합니다.</p>
+<h2>친구들과의 활기찬 파티 룸 추천</h2>
+<p>친구들과의 모임은 대형 룸과 최신 음향 장비가 갖춰진 곳을 선택하면 분위기를 높일 수 있습니다.</p>
+<p>음료 및 간식 메뉴가 다양하게 제공되는 업소를 미리 확인하면 추가 준비 없이 즐길 수 있습니다.</p>
+<h2>회사 회식 및 비즈니스 모임 고려 사항</h2>
+<p>회식이나 비즈니스 모임은 프라이빗한 공간과 무선 인터넷, 프로젝터 등 업무 지원 시설이 있는 룸이 유리합니다.</p>
+<p>예약 전 계약 조건과 취소 정책을 꼼꼼히 살펴보고 서면으로 확정하는 것이 안전합니다.</p>
+<h2>예약 시 공통 체크리스트</h2>
+<p>모든 모임 유형에서 공통으로 확인해야 할 사항은 이용 인원, 희망 시간대, 주차 가능 여부, 금연 구역 여부입니다.</p>
+<p>화곡 가라오케 예약 시 이러한 체크리스트를 활용하면 불필요한 변수를 줄이고 쾌적한 모임을 진행할 수 있습니다.</p>
+<h2>예약 전 준비 사항</h2>
+<p>모임 일정이 확정되면 참여자 명단을 작성하고 선호하는 룸 타입을 사전에 조사해 두면 예약 과정이 빨라집니다.</p>
+<p>특히 주말이나 공휴일은 수요가 집중되므로 최소 일주일 전에 연락을 취하는 것이 바람직합니다.</p>
+<h2>이용 후 유의할 점</h2>
+<p>이용이 끝난 후에는 룸 정리와 쓰레기 분리 배출을 철저히 하여 다음 손님을 위한 청결을 유지해야 합니다.</p>
+<p>시설 파손이나 소음 민원 발생 시 해당
+</main>
 
-      <div class="comment-card">
-        <div class="comment-meta">
-          <span class="comment-author">퇴근길한잔</span>
-          <span>★ ★ ★ ★ ☆ (2026.05.27)</span>
+    <footer>
+        <div class="bio">
+            <p><strong>작성자: 김진우</strong> | 강서구 지역 정보를 5년간 정리해온 로컬 가이드입니다. 참석자 모두가 편안한 모임을 가질 수 있는 최적의 선택지를 연구합니다.</p>
         </div>
-        <div class="comment-text">
-          시끄러운 번화가 술집보다 대화 나누기도 편안하고 아주 아늑한 룸이라 가끔 스트레스 풀고 싶을 때마다 찾는 단골 아지트입니다.
-        </div>
-      </div>
+        <p>&copy; 2024 화곡 가라오케 예약 가이드. All rights reserved.</p>
+    </footer>
+</div>
 
-      <div class="comment-card">
-        <div class="comment-meta">
-          <span class="comment-author">새벽안개</span>
-          <span>★ ★ ★ ★ ★ (2026.05.27)</span>
-        </div>
-        <div class="comment-text">
-          사장님이 너무 정중하게 맞아주셔서 아주 대접받는 느낌이었습니다. 음향 상태도 빵빵하고 기분 좋게 하루 마감하고 가네요.
-        </div>
-      </div>
-    </div>
+<!-- cache_id:a8f2c9e1b5d4 -->
+<div class="cache-marker" style="opacity:0;height:0;overflow:hidden">99283746</div>
 
-    <div class="footer">
-      <p>© 2026 서랍 속 조각글. All Rights Reserved.</p>
-      <div class="archive-id">archive-id: t3b04-hg-karaoke-rsv</div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-<!-- PBN Recent Posts Feed Section -->
-<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
-  <div style="max-width:1100px;margin:0 auto">
-    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
-      
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-10">2026-06-10</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">화곡 가라오케 예약 선택 전에 확인할 체크리스트와 실패 사례</h4>
-        
-      </div>
-      <a href="posts/checklist-001-c9ly8b.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">애니 작화 마니아들이 강력히 추천하는 강남 셔츠룸 스페셜 아카이브</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">애니 작화 마니아들이 강력히 추천하는 강남 셔츠룸 스페셜 아카이브</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-10">2026-06-10</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">화곡 가라오케 예약에 관한 흔한 오해, 직접 확인해보니 달랐던 점</h4>
-        
-</article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">90년대 셀 애니메이션 작화의 한계와 이와 관련된 아날로그 특수 효과의 역사</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">판타지 애니 설정 속 북유럽 세계수(Yggdrasil) 전승의 변형 패턴 고찰</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">전설적인 애니메이터들의 타이밍 미학: 리미티드 3코마 작화법의 운동학</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-05">2026-06-05</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">화곡 가라오케 예약, 내돈내산 리얼 후기 - 3개월간의 진실</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">화곡 가라오케 예약을 찾는 사람들에게, 나는 진실된 후기를 남기고자 한다. 3개월간의 경험을 토대로, 내가 느낀 점과 실제 사용하면서 느낀 점을 공유하고자 한다. ## 첫 인상처음으로 가라오케를 예약했을 때, 나는 많이 긴장했다. 하지만 화곡 가라오케의 직원들은 매우 </p>
-      </div>
-      <a href="posts/review-001.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    </div>
-  </div>
-</section>
 </body>
 </html>
